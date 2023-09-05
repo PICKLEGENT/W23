@@ -1,0 +1,248 @@
+:root {
+    --white: #f5f5f5;
+}
+
+.wrapper {
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    min-height: 100%;
+    color: var(--white);
+    background: url('./public/sunny.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.left-content {
+    position: relative;
+    width: 25%;
+    border-right: 1px solid var(--white);
+    border-radius: 0 25px 25px 0;
+    backdrop-filter: blur(10px);
+    box-shadow: 5px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    position: relative;
+    margin: 25px 0 0 0;
+}
+
+.search-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--white);
+}
+
+.search input {
+    padding: 10px;
+    width: 100%;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: var(--white);
+    border: none;
+    background-color: transparent;
+}
+
+.search input::placeholder {
+    color: var(--white);
+    opacity: 0.5;
+}
+
+.search-btn {
+    padding: 0 10px 0 0;
+    cursor: pointer;
+}
+
+.city {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    font-weight: 800;
+    font-size: 22px;
+    letter-spacing: 0.05em;
+}
+
+.city h1 {
+    border-bottom: 1px solid var(--white);
+}
+
+.temp {
+    margin: 25px 30px 50px 30px;
+}
+
+.cur-temp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-weight: 200;
+    letter-spacing: 0.05em;
+}
+
+.tempature {
+    display: flex;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.tempature p {
+    font-size: 72px;
+}
+
+.coords-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 25px 0;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+}
+
+.fills_like-temp {
+    margin: 25px 0;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+}
+
+.f-like {
+    font-size: 24px;
+}
+
+.wind-humiditi {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0 30px;
+}
+
+.humiditi {
+    font-weight: 200;
+    font-size: 30px;
+    letter-spacing: 0.05em;
+}
+
+.wind {
+    font-weight: 200;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+}
+
+.right-content {
+    margin: 0 100px;
+    position: relative;
+    width: 70%;
+}
+
+.brandname {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+header {
+    margin: 25px 0 0 0;
+}
+
+.heading {
+    width: 120px;
+    font-weight: 300;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.heading__national {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 5px 0;
+    border-bottom: 2px solid var(--white);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.heading__weather {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid var(--white);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.weather-forecast {
+    margin: 50px 0;
+}
+
+.weather-forecast__heading {
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+}
+
+.forecast {
+    margin: 50px 0;
+    width: 100%;
+}
+
+.forecast-description {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 72px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.future-weather {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    font-weight: 200;
+    font-size: 24px;
+    letter-spacing: 0.02em;
+    line-height: 1.88;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.future-weather:hover .future-weater__item {
+    opacity: 0.8;
+}
+
+.future-weater__item {
+    margin: 0 5px;
+    color: var(--white);
+    border-radius: 8px;
+    transition: 0.3s ease 0s;
+}
+
+.future-weather:hover .future-weater__item:hover {
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
+
+.time,
+.future-temp {
+    position: relative;
+    user-select: none;
+}
